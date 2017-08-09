@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Hello from the {{ title }}!</h1>
+  <table border=1>
+  <tr>
+    <td><h2>Name</h2></td>
+    <td><h2>Prize</h2></td>
+    <td><h2>Quantity</h2></td>
+  </tr>
+   
+
+        <tr *ngFor="let d of data | async">
+            <td>
+                <h3>{{ d.name }}</h3>
+            </td>
+            <td> 
+                <h3>{{ d.prize }}</h3>
+            </td>
+            <td>
+                <h3>{{ d.quantity }}</h3>
+            </td>
+        </tr>
+    
+</table>
+</div>
